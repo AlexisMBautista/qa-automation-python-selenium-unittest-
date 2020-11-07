@@ -5,15 +5,15 @@ import time
 
 
 driver = webdriver.Chrome(executable_path=r"C:\CDriver\chromedriver.exe")
-driver.get("https://www.facebook.com")
+driver.get("http://localhost:3000/")
 
 user = driver.find_element_by_id("email")
-user.send_keys("2384013821")
+user.send_keys("a@paciente.com")
 time.sleep(3)
 
 
 password = driver.find_element_by_id("pass")
-password.send_keys("Alexix434010")
+password.send_keys("Qwerty123")
 time.sleep(3)
 password.send_keys(Keys.ENTER)
 

@@ -10,11 +10,11 @@ class use_unittest(unittest.TestCase):
 
     def testFind(self):
         driver = self.driver
-        driver.get("https://www.google.com")
-        self.assertIn("Google" , driver.title)
+        driver.get("http://localhost:3000/")
+        self.assertIn("Administracion de Pacientes" , driver.title)
 
         search = driver.find_element_by_name("q")
-        search.send_keys('Selenium')
+        search.send_keys('Registro')
         search.send_keys(Keys.ENTER)
         time.sleep(10)
 
